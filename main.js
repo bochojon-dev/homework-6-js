@@ -1,14 +1,14 @@
 // HOMEWORK-6
 
 // // Array1
-// function getLevel2(n) {
-//   let arr = [];
-//   for (i = 2; i <= 2 ** n; i = i * 2) {
-//     arr.push(i);
-//   }
-//   return arr;
-// }
-// console.log(getLevel2(5));
+function getLevel2(n) {
+  let arr = [];
+  for (i = 2; i <= 2 ** n; i = i * 2) {
+    arr.push(i);
+  }
+  return arr;
+}
+console.log(getLevel2(5));
 
 // Array2
 // let a = +prompt(`array ning 1-elementini kiriting`);
@@ -24,6 +24,50 @@
 //   return (arr = [i]);
 // }
 // array(n);
+
+// // Array3
+// function getLevel2(n) {
+//   let arr = [];
+//   for (let i = n - 1; i >= 0; i--) {
+//     arr.push(i);
+//     console.log((arr = [i]));
+//   }
+//   console.log((arr = [i]));
+//   return arr;
+// }
+// getLevel2(4);
+
+// // Array4
+// let arr = [4, 9, 7, 8, 6, 5];
+// let toq = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 == 1) {
+//     toq++;
+//     arr.push(i);
+//   }
+// }
+// console.log(`arrayning toq elementlari soni: ${toq}`);
+
+// // // // console.log(`toq elementlardan tashkil topgan array: ${arr}`);
+
+// // Array5
+// let inputArray = [4, 9, 7, 8, 6, 5];
+// function printArr(arr) {
+//   let evens = [];
+//   let odds = [];
+//   for (let i = 0; i < arr.length; i = i + 2) {
+//     evens.push(i);
+//   }
+//   for (let i = arr.length - 1; i >= 0; i = i - 2) {
+//     odds.push(i);
+//   }
+//   let full = evens.concat(odds);
+//   console.log(`hosil bo'lgan array: `, full);
+// }
+// printArr(inputArray);
+
+// Array6
+// Array7
 
 // Array10
 // let n = 9;
@@ -51,22 +95,9 @@
 // }
 // console.log(func6());
 
-// Array12
-// let arr = [10, false, ``, `Maqsadjon`, null, undefined];
-// function check(n) {
-//   for (i = 0; i < arr.length; i++) {
-//     if ((arr = [i] == false)) {
-//       arr.push(i);
-//     }
-//     console.log(i);
-//     // console.log(falsy[i]);
-//   }
-//   return arr;
-// }
-// check(4);
-// Array6
+// // Array12
 // let inputArray = [0, 1, "", "Maqsadjon", null, undefined, true, false, 42, NaN];
-// function checkArray(arr) {
+// function checkArr(arr) {
 //   let truthy = [];
 //   let falsy = [];
 //   for (let el of arr) {
@@ -79,7 +110,7 @@
 
 //   return [truthy, falsy];
 // }
-// let result = checkArray(inputArray);
+// let result = checkArr(inputArray);
 // console.log("Truthy arr: ", result[0]);
 // console.log("Falsy arr: ", result[1]);
 
